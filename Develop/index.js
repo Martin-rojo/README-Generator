@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+//Included packages needed for this application
 import inquirer from 'inquirer';
 import fs from 'fs';
 import generateMarkdown from './utils/generateMarkdown.js';
 
-// TODO: Create an array of questions for user input
+//Created an array of questions for user input
 const questions = [
     {
         type: 'input',
@@ -53,7 +53,7 @@ const questions = [
     }
 ];
 
-// TODO: Create a function to write README file
+//Created a function to write README file
 function writeToFile(fileName, data) {
     try {
         fs.writeFileSync(fileName, data);
@@ -63,7 +63,7 @@ function writeToFile(fileName, data) {
     }
 }
 
-// TODO: Create a function to initialize app
+//Creates a function to initialize app
 async function init() {
     try {
         const responses = await inquirer.prompt(questions);
